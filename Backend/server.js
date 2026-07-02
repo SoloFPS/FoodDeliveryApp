@@ -31,5 +31,5 @@ app.get('/', (req, res, next) => {
 })
 
 app.listen(PORT || 4000, () => {
-    console.log(`The server is running on port http://localhost:${port}`)
+    console.log(`The server is running on port http://localhost:${PORT}`)
 })
