@@ -9,7 +9,6 @@ import orderRouter from './routes/orderRoutes.js'
 
 //app config
 const app = express()
-const port = 4000
 
 //middlewares
 app.use(express.json())
@@ -29,6 +28,6 @@ app.get('/', (req, res, next) => {
     res.send("API IS WORKING")
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log(`The server is running on port http://localhost:${port}`)
 })
